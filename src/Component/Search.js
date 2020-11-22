@@ -12,8 +12,9 @@ class Search extends Component {
     //1 - this wont work so we are using arrow function
     onSearch = (e)=>{
         e.preventDefault();
-        console.log(this.state.term);
+        this.props.onSearch(this.state.term)
     }
+    
     //2 - other way is 
     //{(e)=>{this.onSearch(e)}}
     
