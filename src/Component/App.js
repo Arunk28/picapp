@@ -1,6 +1,9 @@
 import React,{Component} from "react";
 import Search from "./Search";
 
+//lift the state from parent to  child
+//because the react structure is 
+//from parent to child passing
 class App extends Component {
 
  onSearchSubmit(term){
