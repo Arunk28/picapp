@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 class Search extends Component {
-    state = { term : 'Hi theres'  }
+    state = { term : ''  }
 
     //method of event handler
     //if more than one line of code we can use function
