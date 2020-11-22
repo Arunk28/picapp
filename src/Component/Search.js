@@ -8,11 +8,21 @@ class Search extends Component {
     onInputChange =  (event)=>{
         console.log(event.target.value)
     }
-
+    // 3 ways to do 
+    //1 - this wont work so we are using arrow function
+    onSearch = (e)=>{
+        e.preventDefault();
+        console.log(this.state.term);
+    }
+    //2 - other way is 
+    //{(e)=>{this.onSearch(e)}}
+    
+    //3 - contructor object
+    
     render() { 
         return ( 
             <div className="ui segment">
-        <form className="ui form">
+        <form className="ui form" onSubmit={this.onSearch}>
             <div className="field">
                 <label> Image Search</label>
                 {/* <input type="text" onChange={this.onInputChange}></input> */}
