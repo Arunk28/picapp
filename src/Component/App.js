@@ -1,6 +1,7 @@
 import React,{Component} from "react";
 import Search from "./Search";
 import axios from'axios';
+import ImageList from "./ImageList";
 //lift the state from parent to  child
 //because the react structure is 
 //from parent to child passing
@@ -28,7 +29,8 @@ class App extends Component {
   render() { 
     return   (<div className="ui container" style={{marginTop:'10px'}}>
     <Search  onSearch ={this.onSearchSubmit}  />
-    Found images : {this.state.images.length}
+    Total images : {this.state.images.length}
+    <ImageList images ={this.state.images} />
     </div> );
 
   }
