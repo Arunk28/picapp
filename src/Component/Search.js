@@ -9,7 +9,7 @@ class Search extends Component {
         console.log(event.target.value)
     }
     // 3 ways to do 
-    //1 - this wont work so we are using arrow function
+    //1 - this  work so we are using arrow function
     onSearch = (e)=>{
         e.preventDefault();
         this.props.onSearch(this.state.term)
