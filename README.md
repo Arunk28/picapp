@@ -1,2 +1,2 @@
 ### pic app for search images
-### unplash api used 
+### unsplash api used 
