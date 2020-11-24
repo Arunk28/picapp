@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import Search from "./Search";
 import axios from'axios';
 import ImageList from "./ImageList";
+import unsplash from './unsplash';
 //lift the state from parent to  child
 //because the react structure is 
 //from parent to child passing
@@ -12,9 +13,8 @@ class App extends Component {
 
    onSearchSubmit = async (term) => 
    {   
-     const response = await axios.get('https://api.unsplash.com/search/',{
-      params:{query : term},
-      headers:{Authorization : 'Client-ID C2HzwDxiWbpi9zcYHhfHhh8ozGS2eQcVzGbiIKE5nRM'}
+     const response = await unsplash.get('/search/',{
+      params:{query : term}      
     });
 
     this.setState({images : response.data.collections.results});
