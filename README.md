@@ -3,4 +3,4 @@
 
 ### MADE WITH REACT 
 
-### Learning purpose
+### Learning from https://www.udemy.com/course/react-redux/
