@@ -13,7 +13,8 @@ class ImageCard extends Component {
    }
    setSpan = ()=>{
        const height =this.imageRef.current.clientHeight;
-        this.setState({span : height});
+       const span = Math.ceil(height/10);
+        this.setState({span});
    }
     render() { 
         const {id ,alt_description,urls }  = this.props.searchImages;
