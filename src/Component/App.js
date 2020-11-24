@@ -1,6 +1,5 @@
 import React,{Component} from "react";
 import Search from "./Search";
-import axios from'axios';
 import ImageList from "./ImageList";
 import unsplash from './unsplash';
 //lift the state from parent to  child
